@@ -31,7 +31,7 @@ export default function Login() {
                         />
                     </div>
                     <div>
-                        <button disabled={isFormValid()} className="form__button">Submit</button>
+                        <button disabled={!isFormValid()} className="button form__button">Submit</button>
                     </div>
             </form>
         </div>

@@ -1,4 +1,5 @@
 import {NewsClient} from "./client/NewsClient";
+import {useEffect} from "react";
 
 export default function RandomArticleButton() {
     const client = new NewsClient();

@@ -4,6 +4,7 @@ import './App.css';
 import RandomArticleButton from "./RandomArticleButton";
 import Header from "./Header";
 import Login from "./routes/Login";
+import News from "./routes/News";
 import Root from "./Root";
 import {
     createBrowserRouter,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: "login/",
         element: <Login />,
+    },
+    {
+        path: "news/",
+        element: <News />,
     },
 ]);
 

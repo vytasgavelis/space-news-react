@@ -21,6 +21,10 @@ code {
   font-size: 16px;
   text-decoration: none;
   max-width: 200px;
+
+  &:disabled {
+    background: white;
+  }
 }
 
 .button:hover {
@@ -93,5 +97,38 @@ body {
     justify-content: space-evenly;
     margin: 10px;
     text-align:center;
+  }
+}
+
+.article-container {
+  display: grid;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 600px) {
+  .article-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .article-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+.article {
+  min-height: 400px;
+  max-height: 400px;
+
+  &__image {
+    width: 100%;
+    height: 250px;
+  }
+
+  &__text {
+    padding: 5px;
+  }
+
+  &__link {
+    color: white;
+    min-height: 80px;
   }
 }
